@@ -13767,519 +13767,174 @@ INFO  - 2013-10-10 13:56:49.908; org.apache.solr.core.SolrCore; [collection1] we
 INFO  - 2013-10-10 13:56:49.912; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
 INFO  - 2013-10-10 13:56:50.021; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
 INFO  - 2013-10-10 13:56:50.025; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:49.584; org.eclipse.jetty.server.Server; jetty-8.1.8.v20121106
-INFO  - 2013-10-14 08:45:49.601; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\Users\Neblich\Desktop\solr\example\contexts at interval 0
-INFO  - 2013-10-14 08:45:49.608; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\Users\Neblich\Desktop\solr\example\contexts\solr-jetty-context.xml
-INFO  - 2013-10-14 08:45:50.310; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-INFO  - 2013-10-14 08:45:50.335; org.eclipse.jetty.server.handler.ContextHandler; started o.e.j.w.WebAppContext{/solr,file:/C:/Users/Neblich/Desktop/solr/example/solr-webapp/webapp/},C:\Users\Neblich\Desktop\solr\example/webapps/solr.war
-INFO  - 2013-10-14 08:45:50.336; org.eclipse.jetty.server.handler.ContextHandler; started o.e.j.w.WebAppContext{/solr,file:/C:/Users/Neblich/Desktop/solr/example/solr-webapp/webapp/},C:\Users\Neblich\Desktop\solr\example/webapps/solr.war
-INFO  - 2013-10-14 08:45:50.350; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
-INFO  - 2013-10-14 08:45:50.368; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
-INFO  - 2013-10-14 08:45:50.368; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
-INFO  - 2013-10-14 08:45:50.377; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: C:\Users\Neblich\Desktop\solr\example\solr\solr.xml
-INFO  - 2013-10-14 08:45:50.379; org.apache.solr.core.CoreContainer; New CoreContainer 1971599989
-INFO  - 2013-10-14 08:45:50.380; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: 'solr/'
-INFO  - 2013-10-14 08:45:50.381; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
-INFO  - 2013-10-14 08:45:50.636; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
-INFO  - 2013-10-14 08:45:50.637; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
-INFO  - 2013-10-14 08:45:50.637; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
-INFO  - 2013-10-14 08:45:50.639; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
-INFO  - 2013-10-14 08:45:50.639; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
-INFO  - 2013-10-14 08:45:50.640; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
-INFO  - 2013-10-14 08:45:50.640; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
-INFO  - 2013-10-14 08:45:50.641; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
-INFO  - 2013-10-14 08:45:50.641; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
-INFO  - 2013-10-14 08:45:50.647; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
-INFO  - 2013-10-14 08:45:50.756; org.apache.solr.core.CoreContainer; Registering Log Listener
-INFO  - 2013-10-14 08:45:50.777; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: solr\collection1
-INFO  - 2013-10-14 08:45:50.778; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr\collection1\'
-INFO  - 2013-10-14 08:45:50.823; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
-INFO  - 2013-10-14 08:45:50.825; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
-INFO  - 2013-10-14 08:45:50.826; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
-INFO  - 2013-10-14 08:45:50.826; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
-INFO  - 2013-10-14 08:45:50.827; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
-INFO  - 2013-10-14 08:45:50.827; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.828; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.828; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.828; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.829; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/icu4j-49.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.829; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.830; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.830; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.831; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
-INFO  - 2013-10-14 08:45:50.831; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
-INFO  - 2013-10-14 08:45:50.832; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
-INFO  - 2013-10-14 08:45:50.832; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.833; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-3.8.jar' to classloader
-INFO  - 2013-10-14 08:45:50.833; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
-INFO  - 2013-10-14 08:45:50.834; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
-INFO  - 2013-10-14 08:45:50.835; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
-INFO  - 2013-10-14 08:45:50.835; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/rome-0.9.jar' to classloader
-INFO  - 2013-10-14 08:45:50.836; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.836; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tika-core-1.3.jar' to classloader
-INFO  - 2013-10-14 08:45:50.836; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
-INFO  - 2013-10-14 08:45:50.837; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.837; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.838; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.838; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.838; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xz-1.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.840; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-cell-4.3.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.841; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.841; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
-INFO  - 2013-10-14 08:45:50.842; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.842; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
-INFO  - 2013-10-14 08:45:50.843; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
-INFO  - 2013-10-14 08:45:50.843; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.843; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
-INFO  - 2013-10-14 08:45:50.844; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
-INFO  - 2013-10-14 08:45:50.845; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-clustering-4.3.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.845; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
-INFO  - 2013-10-14 08:45:50.846; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
-INFO  - 2013-10-14 08:45:50.847; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-langid-4.3.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.848; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.848; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
-INFO  - 2013-10-14 08:45:50.848; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
-INFO  - 2013-10-14 08:45:50.849; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
-INFO  - 2013-10-14 08:45:50.850; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-velocity-4.3.0.jar' to classloader
-WARN  - 2013-10-14 08:45:50.850; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: C:\Users\Neblich\Desktop\solr\example\solr\collection1\non\existent\dir\yields\warning).
-INFO  - 2013-10-14 08:45:50.956; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
-INFO  - 2013-10-14 08:45:51.056; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
-INFO  - 2013-10-14 08:45:51.062; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
-INFO  - 2013-10-14 08:45:51.070; org.apache.solr.schema.IndexSchema; Schema name=example
-INFO  - 2013-10-14 08:45:51.130; org.apache.solr.schema.IndexSchema; unique key field: id
-INFO  - 2013-10-14 08:45:51.153; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
-INFO  - 2013-10-14 08:45:51.164; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at solr\collection1\, dataDir=C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\
-INFO  - 2013-10-14 08:45:51.165; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
-INFO  - 2013-10-14 08:45:51.169; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
-INFO  - 2013-10-14 08:45:51.170; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
-INFO  - 2013-10-14 08:45:51.173; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
-INFO  - 2013-10-14 08:45:51.186; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Neblich\Desktop\solr\example\solr\collection1\data
-INFO  - 2013-10-14 08:45:51.187; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\index/
-INFO  - 2013-10-14 08:45:51.188; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\index
-INFO  - 2013-10-14 08:45:51.195; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
-INFO  - 2013-10-14 08:45:51.195; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
-INFO  - 2013-10-14 08:45:51.196; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
-INFO  - 2013-10-14 08:45:51.200; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
-INFO  - 2013-10-14 08:45:51.200; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
-INFO  - 2013-10-14 08:45:51.277; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.277; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.280; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
-INFO  - 2013-10-14 08:45:51.280; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.283; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
-INFO  - 2013-10-14 08:45:51.285; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
-INFO  - 2013-10-14 08:45:51.287; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
-INFO  - 2013-10-14 08:45:51.288; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-INFO  - 2013-10-14 08:45:51.289; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
-INFO  - 2013-10-14 08:45:51.289; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-INFO  - 2013-10-14 08:45:51.290; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
-INFO  - 2013-10-14 08:45:51.290; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-INFO  - 2013-10-14 08:45:51.291; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
-INFO  - 2013-10-14 08:45:51.293; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
-INFO  - 2013-10-14 08:45:51.295; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
-INFO  - 2013-10-14 08:45:51.297; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
-INFO  - 2013-10-14 08:45:51.304; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
-INFO  - 2013-10-14 08:45:51.305; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.305; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.306; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.306; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.307; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.307; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.307; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.307; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
-INFO  - 2013-10-14 08:45:51.321; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
-INFO  - 2013-10-14 08:45:51.323; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
-INFO  - 2013-10-14 08:45:51.324; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
-INFO  - 2013-10-14 08:45:51.384; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7563a320 main
-INFO  - 2013-10-14 08:45:51.431; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
-INFO  - 2013-10-14 08:45:51.432; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
-INFO  - 2013-10-14 08:45:51.432; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
-INFO  - 2013-10-14 08:45:51.438; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=2,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-INFO  - 2013-10-14 08:45:51.443; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
-INFO  - 2013-10-14 08:45:51.445; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: C:\Users\Neblich\Desktop\solr\example\solr\collection1\conf\elevate.xml
-INFO  - 2013-10-14 08:45:51.477; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
-INFO  - 2013-10-14 08:45:51.478; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@7563a320 main{StandardDirectoryReader(segments_9o:317 _2g(4.3):C3642/661)}
-INFO  - 2013-10-14 08:45:51.478; org.apache.solr.core.CoreContainer; registering core: collection1
-INFO  - 2013-10-14 08:45:51.480; org.apache.solr.servlet.SolrDispatchFilter; user.dir=C:\Users\Neblich\Desktop\solr\example
-INFO  - 2013-10-14 08:45:51.480; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
-INFO  - 2013-10-14 08:45:51.529; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
-INFO  - 2013-10-14 08:45:51.604; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1919 status=0 QTime=125 
-INFO  - 2013-10-14 08:45:51.617; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
-INFO  - 2013-10-14 08:45:51.618; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
-INFO  - 2013-10-14 08:45:51.618; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
-INFO  - 2013-10-14 08:45:51.619; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@7563a320 main{StandardDirectoryReader(segments_9o:317 _2g(4.3):C3642/661)}
-INFO  - 2013-10-14 08:45:57.070; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=author_s,memSize=18988,tindexSize=40,time=4,phase1=3,nTerms=86,bigTerms=1,termInstances=129,uses=0}
-INFO  - 2013-10-14 08:45:57.077; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=origin_s,memSize=19274,tindexSize=118,time=5,phase1=5,nTerms=597,bigTerms=3,termInstances=2117,uses=0}
-INFO  - 2013-10-14 08:45:57.226; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={} hits=2981 status=0 QTime=193 
-INFO  - 2013-10-14 08:45:57.718; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:57.726; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.733; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.761; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.957; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.962; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.968; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:57.972; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.977; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.983; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:57.988; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.993; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:57.998; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.004; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.009; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.014; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.019; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.024; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.035; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.040; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.045; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:58.052; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:58.057; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:58.068; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:58.073; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:59.018; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:45:59.061; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:45:59.070; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.032; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&to_day=31&from_day=31&to_month=12&from_month=2&fq=date:[1987-02-31T00:00:00Z+TO+1987-12-31T00:00:00Z]} hits=2981 status=0 QTime=105 
-INFO  - 2013-10-14 08:46:30.269; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.269; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.285; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.286; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.356; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.358; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.372; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.364; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.359; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.404; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.369; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.415; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.416; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.417; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.419; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.420; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.422; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.424; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.425; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.426; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.427; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.429; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.433; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.435; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.436; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=2 
-INFO  - 2013-10-14 08:46:30.636; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:30.655; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:30.658; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.455; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=id:0009613&mlt=true&fq=date:[1987-02-31T00:00:00Z+TO+1987-12-31T00:00:00Z]} hits=1 status=0 QTime=176 
-INFO  - 2013-10-14 08:46:52.541; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.542; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.544; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.542; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.573; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.574; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.574; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.583; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.583; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.583; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.586; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.589; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.590; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.591; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.596; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.599; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.602; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.609; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.610; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.611; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.612; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.600; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.613; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.613; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:52.609; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.777; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:52.781; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.362; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=kkeejfalksö&to_day=31&from_day=31&to_month=12&from_month=2&fq=date:[1987-02-31T00:00:00Z+TO+1987-12-31T00:00:00Z]} hits=0 status=0 QTime=70 
-INFO  - 2013-10-14 08:46:59.439; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.441; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.441; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.442; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.459; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.460; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.460; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.465; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.459; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.470; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.459; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.474; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.476; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.473; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.462; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.477; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.475; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.479; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.474; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.479; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.479; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.487; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.490; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.478; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:46:59.483; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.631; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:46:59.634; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.515; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={} hits=2981 status=0 QTime=73 
-INFO  - 2013-10-14 08:47:01.644; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.649; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.646; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.645; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.665; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.665; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.667; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.669; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.670; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.671; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:01.671; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:01.676; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.679; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.680; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.682; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.683; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.684; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.687; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.688; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.689; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.688; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.690; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.692; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.689; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:01.691; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.842; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.857; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:01.860; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.478; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"gas"} hits=12 status=0 QTime=53 
-INFO  - 2013-10-14 08:47:03.648; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.650; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.656; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.658; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.705; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.706; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:03.705; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.713; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.716; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.719; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.719; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.718; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.721; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.725; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.728; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.729; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.730; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.729; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.728; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.732; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.731; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:03.740; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.741; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.744; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:03.730; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:04.328; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:04.358; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:04.363; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.428; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=} hits=2981 status=0 QTime=73 
-INFO  - 2013-10-14 08:47:06.570; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.571; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.572; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.571; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.597; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.598; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.598; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.601; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.602; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.604; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.605; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.604; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.612; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.612; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.612; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.613; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.617; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.618; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.619; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.618; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.623; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=3 
-INFO  - 2013-10-14 08:47:06.621; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.620; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.620; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.624; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.809; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:06.825; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:06.829; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:08.832; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"money-supply"} hits=21 status=0 QTime=53 
-INFO  - 2013-10-14 08:47:08.946; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:08.948; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:08.948; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:08.947; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:08.996; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:08.999; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.000; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:08.999; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.005; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.007; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.008; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.009; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.010; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.009; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.011; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.014; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.015; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.015; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.017; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.016; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.021; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.026; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.030; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.032; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.034; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.613; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:09.644; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:09.650; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.312; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"money-supply"&fq=author_s:"Allan+Saunderson"} hits=0 status=0 QTime=5 
-INFO  - 2013-10-14 08:47:11.385; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.390; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.390; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.394; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=4 
-INFO  - 2013-10-14 08:47:11.427; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.427; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.428; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.433; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.435; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.434; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.434; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.437; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.439; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.443; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.447; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:11.450; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:11.449; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.449; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.449; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.454; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.456; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.454; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.453; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.460; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:11.450; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.572; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:11.575; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.545; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"money-supply"} hits=21 status=0 QTime=32 
-INFO  - 2013-10-14 08:47:14.681; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.682; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.685; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.685; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.723; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.725; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.725; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.726; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.727; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.732; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.731; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.737; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.731; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.728; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.730; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.740; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.740; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.738; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.742; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.737; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.743; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.743; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:14.740; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.743; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.745; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.835; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.849; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:14.852; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.711; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"money-supply"&fq=cat:"money-supply"} hits=21 status=0 QTime=30 
-INFO  - 2013-10-14 08:47:18.799; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.800; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.800; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.800; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.816; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.817; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.820; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.819; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.831; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.834; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.833; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.841; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.838; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.851; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.854; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.839; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.839; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.839; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.859; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.858; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:18.858; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.857; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.845; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.863; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:18.863; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:19.009; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:19.024; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:19.027; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.490; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={q=&fq=cat:"money-supply"} hits=21 status=0 QTime=20 
-INFO  - 2013-10-14 08:47:20.600; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.601; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.602; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.603; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.692; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.695; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.699; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.702; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.692; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.703; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.697; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.696; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.696; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.710; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.713; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.709; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.706; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.705; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.720; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.718; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.722; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.715; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.711; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.722; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.721; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.884; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:20.901; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:20.905; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:25.949; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={} hits=2981 status=0 QTime=26 
-INFO  - 2013-10-14 08:47:26.048; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.054; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.053; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.050; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.103; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.105; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.104; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.111; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.111; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.116; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.110; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.106; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.120; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.122; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.124; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=2 
-INFO  - 2013-10-14 08:47:26.119; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.117; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.113; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.128; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.130; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.126; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.126; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.124; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.131; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.131; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=1 
-INFO  - 2013-10-14 08:47:26.273; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.288; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=0 
-INFO  - 2013-10-14 08:47:26.291; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:22.682; org.eclipse.jetty.server.Server; jetty-8.1.8.v20121106
+INFO  - 2013-10-14 14:25:22.697; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\Users\Neblich\Desktop\solr\example\contexts at interval 0
+INFO  - 2013-10-14 14:25:22.713; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\Users\Neblich\Desktop\solr\example\contexts\solr-jetty-context.xml
+INFO  - 2013-10-14 14:25:23.415; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2013-10-14 14:25:23.446; org.eclipse.jetty.server.handler.ContextHandler; started o.e.j.w.WebAppContext{/solr,file:/C:/Users/Neblich/Desktop/solr/example/solr-webapp/webapp/},C:\Users\Neblich\Desktop\solr\example/webapps/solr.war
+INFO  - 2013-10-14 14:25:23.446; org.eclipse.jetty.server.handler.ContextHandler; started o.e.j.w.WebAppContext{/solr,file:/C:/Users/Neblich/Desktop/solr/example/solr-webapp/webapp/},C:\Users\Neblich\Desktop\solr\example/webapps/solr.war
+INFO  - 2013-10-14 14:25:23.462; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2013-10-14 14:25:23.462; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2013-10-14 14:25:23.462; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2013-10-14 14:25:23.477; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: C:\Users\Neblich\Desktop\solr\example\solr\solr.xml
+INFO  - 2013-10-14 14:25:23.477; org.apache.solr.core.CoreContainer; New CoreContainer 956951190
+INFO  - 2013-10-14 14:25:23.477; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: 'solr/'
+INFO  - 2013-10-14 14:25:23.477; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2013-10-14 14:25:23.696; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2013-10-14 14:25:23.805; org.apache.solr.core.CoreContainer; Registering Log Listener
+INFO  - 2013-10-14 14:25:23.836; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: solr\collection1
+INFO  - 2013-10-14 14:25:23.836; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr\collection1\'
+INFO  - 2013-10-14 14:25:23.867; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2013-10-14 14:25:23.867; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2013-10-14 14:25:23.867; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.883; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Adding 'file:/C:/Users/Neblich/Desktop/solr/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - 2013-10-14 14:25:23.898; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: C:\Users\Neblich\Desktop\solr\example\solr\collection1\non\existent\dir\yields\warning).
+INFO  - 2013-10-14 14:25:24.008; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - 2013-10-14 14:25:24.101; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-10-14 14:25:24.117; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-10-14 14:25:24.117; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - 2013-10-14 14:25:24.179; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2013-10-14 14:25:24.195; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-10-14 14:25:24.210; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at solr\collection1\, dataDir=C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\
+INFO  - 2013-10-14 14:25:24.210; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2013-10-14 14:25:24.210; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-10-14 14:25:24.210; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-10-14 14:25:24.210; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-10-14 14:25:24.226; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Neblich\Desktop\solr\example\solr\collection1\data
+INFO  - 2013-10-14 14:25:24.226; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\index/
+INFO  - 2013-10-14 14:25:24.226; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Neblich\Desktop\solr\example\solr\collection1\data\index
+INFO  - 2013-10-14 14:25:24.242; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-10-14 14:25:24.242; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-10-14 14:25:24.242; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-10-14 14:25:24.242; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-10-14 14:25:24.242; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-10-14 14:25:24.320; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.320; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.320; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-10-14 14:25:24.320; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.320; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-10-14 14:25:24.335; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.351; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-10-14 14:25:24.366; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-10-14 14:25:24.366; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-10-14 14:25:24.366; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-10-14 14:25:24.413; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@355c6c8d main
+INFO  - 2013-10-14 14:25:24.476; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-10-14 14:25:24.476; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-10-14 14:25:24.476; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-10-14 14:25:24.476; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=2,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-10-14 14:25:24.491; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-10-14 14:25:24.491; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: C:\Users\Neblich\Desktop\solr\example\solr\collection1\conf\elevate.xml
+INFO  - 2013-10-14 14:25:24.522; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-10-14 14:25:24.522; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@355c6c8d main{StandardDirectoryReader(segments_9o:317 _2g(4.3):C3642/661)}
+INFO  - 2013-10-14 14:25:24.522; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2013-10-14 14:25:24.538; org.apache.solr.servlet.SolrDispatchFilter; user.dir=C:\Users\Neblich\Desktop\solr\example
+INFO  - 2013-10-14 14:25:24.538; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2013-10-14 14:25:24.585; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2013-10-14 14:25:24.710; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1919 status=0 QTime=188 
+INFO  - 2013-10-14 14:25:24.736; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-10-14 14:25:24.737; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-10-14 14:25:24.738; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-10-14 14:25:24.739; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@355c6c8d main{StandardDirectoryReader(segments_9o:317 _2g(4.3):C3642/661)}
+INFO  - 2013-10-14 14:25:27.557; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=author_s,memSize=18988,tindexSize=40,time=3,phase1=2,nTerms=86,bigTerms=1,termInstances=129,uses=0}
+INFO  - 2013-10-14 14:25:27.564; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=origin_s,memSize=19274,tindexSize=118,time=6,phase1=6,nTerms=597,bigTerms=3,termInstances=2117,uses=0}
+INFO  - 2013-10-14 14:25:27.715; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/browse params={} hits=2981 status=0 QTime=194 
+INFO  - 2013-10-14 14:25:28.350; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/main.css&contentType=text/css} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.355; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.css&contentType=text/css} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.360; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/timeline-api.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.427; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/jquery.autocomplete.js&contentType=text/javascript} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.645; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/timeline.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.651; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/band.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.656; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/themes.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.661; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ethers.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.667; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/ether-painters.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.672; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/event-utils.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.677; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/labellers.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.682; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/sources.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.687; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/original-painter.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.692; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/detailed-painter.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.697; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/overview-painter.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.703; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/compact-painter.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.707; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/decorators.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.712; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/units.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.722; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/timeline.css} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.728; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/ethers.css} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.733; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/styles/events.css} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.738; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/timeline.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.743; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/de/labellers.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:28.753; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/timeline.js} status=0 QTime=0 
+INFO  - 2013-10-14 14:25:28.758; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/scripts/l10n/en/labellers.js} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:29.197; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/copyright-vertical.png} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:29.222; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/progress-running.gif} status=0 QTime=1 
+INFO  - 2013-10-14 14:25:29.227; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file params={file=/velocity/api/images/dull-blue-circle.png} status=0 QTime=0 
