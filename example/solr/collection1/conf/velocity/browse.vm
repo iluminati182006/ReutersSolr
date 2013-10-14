@@ -1,0 +1,289 @@
+
+
+#set($searcher=$request.searcher)
+#set($params=$request.params)
+#set($clusters = $response.response.clusters)
+#set($mltResults = $response.response.get("moreLikeThis"))
+#set($annotate = $params.get("annotateBrowse"))
+
+
+##Searchbar **************************************************************************************
+<div class="navigators">
+  #parse("facets.vm")
+</div>
+
+
+##Sucheingabe *****************************************************************************************
+<div id="query">
+#parse('query.vm')
+#parse('did_you_mean.vm')
+</div>
+
+##Obere Leiste (Suchergebniss)*********************************************************************************
+
+<div id="pagination4" style="padding-left:288px; align:right">
+	<font color="#A6B0C9">$page.results_found results found.</font>
+  <br/>
+</div>
+
+
+
+
+
+
+
+
+
+##Suchergebnisse *********************************************************************************
+<div class="error">
+  #if(${response.response.error.code})
+    <h1>ERROR ${response.response.error.code}</h1>
+    ${response.response.error.msg}
+  #end
+</div>
+
+<div>
+  #if($response.response.get('grouped'))
+  #else
+    #foreach($doc in $response.results)
+	
+		#set($origin = $doc.getFieldValue('origin'))
+		#set($title = $doc.getFieldValue('name'))
+		#set($title = $title.toString())
+		#set($content2 = $doc.getFieldValue('content'))
+		#set($content2 = $content2.toString())
+		#set($id = $doc.getFieldValue('id'))
+	
+		#if($title.indexOf("'")!=-1)		
+			#set($title = $title.replaceAll("'",""))
+		#end	
+								
+		#set($date2 = $doc.getFieldValue('date'))
+		#set($helpDate = $doc.getFieldValue('date'))
+
+		<script>
+		var id = '$id';
+		var content2 = '<a href=\"#lensNoQ&q=id:'+id+'&mlt=true\">Full Articel</a>';
+		
+		var title = '$title';		
+		var origin = '$origin';	
+		
+		
+		contents.push(content2);
+		locations.push(origin);				
+		titles.push(title);
+		var date2 = '$date2';
+		
+		
+		var year2 = date2.substring(date2.length-4,date2.length);
+		
+		if(date2.indexOf("Jan")!=-1){		
+			var month2 = 1;
+			date2 = date2.replace("Jan ","|");
+		}else if(date2.indexOf("Feb")!=-1){		
+			var month2 = 2;
+			date2 = date2.replace("Feb ","|");
+		}else if(date2.indexOf("Mar")!=-1){		
+			var month2 = 3;
+			date2 = date2.replace("Mar ","|");
+		}else if(date2.indexOf("Apr")!=-1){		
+			var month2 = 4;
+			date2 = date2.replace("Apr ","|");
+		}else if(date2.indexOf("May")!=-1){		
+			var month2 = 5;
+			date2 = date2.replace("May ","|");
+		}else if(date2.indexOf("Jun")!=-1){		
+			var month2 = 6;
+			date2 = date2.replace("Jun ","|");
+		}else if(date2.indexOf("July")!=-1){		
+			var month2 = 7;
+			date2 = date2.replace("July ","|");
+		}else if(date2.indexOf("Aug")!=-1){		
+			var month2 = 8;
+			date2 = date2.replace("Aug ","|");
+		}else if(date2.indexOf("Sept")!=-1){		
+			var month2 = 9;
+			date2 = date2.replace("Sept ","|");
+		}else if(date2.indexOf("Oct")!=-1){		
+			var month2 = 10;
+			date2 = date2.replace("Oct ","|");
+		}else if(date2.indexOf("Nov")!=-1){		
+			var month2 = 11;
+			date2 = date2.replace("Nov ","|");
+		}else if(date2.indexOf("Dec")!=-1){			
+			var month2 = 12;
+			date2 = date2.replace("Dec ","|");
+		}
+		months2.push(month2-1);
+		
+		
+		var day2 = date2.substring(date2.indexOf("|")+1,date2.indexOf("|")+3);
+		if(day2.indexOf("0")!=-1){
+			day2 = day2.replace("0","");
+		}
+		
+		days2.push(day2);
+		
+		map = initializeMap();
+		</script>
+    #end
+  #end
+</div>
+
+#parse("events.vm")
+
+
+
+<script>
+
+    // IMPORTANT PART
+    // Display new event
+    // Source of information:
+    // http://markmail.org/message/zfsq3ue3fovhvtuz#query:+page:1+mid:zfsq3ue3fovhvtuz+state:results
+    function displayEvent() {
+
+            // Define your own event, this is static to make things simple
+            var evt = new Timeline.DefaultEventSource.Event({
+
+                    'start': new Date(2011, 9, 7),
+                    'end': new Date(2011, 9, 10),
+                    'title': 'added event',
+                    'description': 'added event',
+                    'color': 'yellow'
+
+            });
+
+            // eventSource1 is defined lower, you should really refactor this code :-)
+            eventSource1._events.add(evt);
+            eventSource1._fire("onAddMany", []);
+            tl.layout();
+    }
+
+
+    // Timeline and eventSource1
+    var tl;
+    var eventSource1;
+
+    // Initialize timeline and load data from variable `timeline_data`
+    window.onload = function() {
+
+        var tl_el = document.getElementById("tl");
+        eventSource1 = new Timeline.DefaultEventSource();
+
+        var theme1 = Timeline.ClassicTheme.create();
+        theme1.event.bubble.width = 200;
+        theme1.event.bubble.height = 300;
+        theme1.autoWidth = true;
+        theme1.timeline_start = new Date(Date.UTC(1987, 0, 1));
+        theme1.timeline_stop  = new Date(Date.UTC(1988, 0, 1));
+
+        var d = Timeline.DateTime.parseGregorianDateTime("$date.format('yyyy.MM.dd',$helpDate)");
+       
+	    var bandInfos = [
+            Timeline.createBandInfo({
+                width:          "85%", 
+                intervalUnit:   Timeline.DateTime.WEEK, 
+                intervalPixels: 70,
+				date:           d,
+                eventSource:    eventSource1
+              //  theme:          theme1
+            }),
+			Timeline.createBandInfo({
+                width:          "15%",
+                intervalUnit:   Timeline.DateTime.MONTH,
+                intervalPixels: 100,
+                eventSource:    eventSource1,
+                overview:       true,
+				date:           d
+               // theme:          theme
+            })
+          
+        ];
+		
+		bandInfos[1].syncWith = 0;
+        bandInfos[1].highlight = true;
+
+
+
+        // create the Timeline
+        tl = Timeline.create(tl_el, bandInfos, Timeline.HORIZONTAL);
+
+        var url = '.'; // The base url for image, icon and background image
+                       // references in the data
+        eventSource1.loadJSON(timeline_data, url); // The data was stored into the
+                                                   // timeline_data variable.
+        tl.layout(); // display the Timeline
+    };
+
+    // Resizing from distribution example
+    var resizeTimerID = null;
+    function onResize() {
+        if (resizeTimerID == null) {
+            resizeTimerID = window.setTimeout(function() {
+                resizeTimerID = null;
+                tl.layout();
+            }, 500);
+        }
+    }
+ </script>
+
+
+<div class="results">
+	<script>
+	var pageCount = ('$page.current_page_number'-1)*10;
+	count = pageCount + count + 1;
+	</script>
+  #if($response.response.get('grouped'))
+    #foreach($grouping in $response.response.get('grouped'))
+      #parse("hitGrouped.vm")
+    #end
+  #else
+    #foreach($doc in $response.results)
+	<script>
+	count = count + 1;
+	</script>
+     	#set($docId = $doc.getFieldValue('id'))
+		#set($origin = $doc.getFieldValue('origin'))
+		#set($content = $doc.getFieldValue('content'))			
+		<div id="result-document">
+		#if($doc.getFieldValue('title'))
+		  #parse("product-doc.vm")
+		#elseif($doc.getFieldValue('compName_s'))
+		  #parse("join-doc.vm")
+		#else
+		  #parse("product-doc.vm")
+		#end
+		</div>
+    #end
+  #end
+</div>
+
+
+##Untere Leiste ***********************************************************************************++
+<div class="pagination" style="text-align:center; margin-left:150px">
+#if($page.results_found!=1)
+  #if($response.response.get('grouped'))
+  #else
+  #if($page.current_page_number>0)
+  #link_to_previous_page("<<< ")
+  
+  Page <span class="page-num">$page.current_page_number</span> of <span
+        class="page-count">$page.page_count</span>
+  #link_to_next_page(" >>>")
+  #else
+  
+  <script>
+	document.getElementById('query').style.display='none';
+	document.getElementById('pagination4').style.display='none';
+	</script>
+	</br>
+  
+  	<h2>Your search did not match any documents.</h2>
+  
+  #end
+  #end
+#end
+  <br/>
+</div>
+
+

@@ -1,0 +1,92 @@
+<div class="result-title">
+
+##Titel und Autor (Beispiel: Blablabla - Dick Nilsen)
+
+<div id="titlename">
+<span class="mlt"><a href="#lensNoQ&q=id:$docId&mlt=true"><b>
+#field('name')</b></a></span>
+#if($doc.getFieldValue('author')!='')
+- $doc.getFieldValue('author')
+#end
+</div>
+
+<div id="singletitlename" style="display:none">
+		<span class="mlt"><a href="#lensNoQ&q=id:$docId&mlt=true"><b>#field('name')</b></a></span>
+		#if($doc.getFieldValue('author')!='')
+		 #field('author')
+		#end
+
+</div>
+
+</div>
+
+##Herkunft - Artikel
+#set($origin = $doc.getFieldValue('origin'))
+#set($datum = $doc.getFieldValue('date'))
+#set($content = $doc.getFieldValue('content'))
+#set($content = $content.toString())
+#set($length = $content.length())
+
+##Karte - Artikel
+
+#if($origin)
+<div id="map"><img src="http://maps.googleapis.com/maps/api/staticmap?center=($origin)&zoom=2&size=300x100&markers=($origin)&maptype=roadmap&sensor=false" /><div><small><a target="_map" 	href="http://maps.google.com/?q=$origin&z=5&amp;source=embed">Larger Map</a></small></div></div>
+#end
+
+#set($mlt = $mltResults.get($docId))
+#set($mltOn = $params.getBool('mlt'))
+
+##Datum und Inhalt - Artikel
+#if($response.results.size()==1 && $mltOn == true)
+
+<script type="text/javascript">
+document.getElementById('accordion').style.display='none';
+document.getElementById('searchbarTime').style.display='none';
+document.getElementById('query').style.display='none';
+document.getElementById('singletitlename').style.display='inline';
+document.getElementById('titlename').style.display='none';
+document.getElementById('map').style.display='inline';
+document.getElementById('pagination4').style.display='none';
+</script>
+
+<div>$origin.substring(0,$origin.length()), $date.format('yyyy.MM.dd',$datum) - $doc.getFieldValue('content')</div>
+
+#else
+<div>$origin.substring(0,$origin.length()), $date.format('yyyy.MM.dd',$datum) - #field('content')... <span class="mlt"><a href="#lensNoQ&q=id:$docId&mlt=true">Full Articel</a></span></div>
+#end
+
+
+
+
+	##Similiar Itmes
+	<div class="mlt">
+		
+	  #if($mltOn == true)
+		</br><div class="field-name">Similar Items</div>
+	  #end
+	  #if ($mltOn && $mlt && $mlt.size() > 0)
+		  <ul>	  
+			#foreach($mltHit in $mlt)
+			  #set($mltId = $mltHit.getFieldValue('id'))
+			  <li>
+			  
+				<div><a href="#url_for_home?q=id:$mltId&mlt=true">$mltHit.getFieldValue('name')</a></div>
+				<div><span class="field-name">Date: </span>
+				
+				$date.format('dd.mm.yyyy',$mltHit.getFieldValue('date'))
+				
+				</div>			
+				<div><span class="field-name">Origin: </span> $mltHit.getFieldValue('origin')</div>
+				
+		
+			  </li>
+			#end		
+		  </ul>
+	  #elseif($mltOn && $mlt.size() == 0)
+		<div>No Similar Items Found</div>
+	  #end
+  
+</div>
+
+##NOT RELEVANT
+#parse('debug.vm')

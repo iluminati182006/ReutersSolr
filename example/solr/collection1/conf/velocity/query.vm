@@ -1,0 +1,238 @@
+<div id="pagination" style="text-size:12px">
+
+<div class="query-box">
+		
+
+     		#parse("querySpatial.vm") 
+	 		#parse("queryGroup.vm")  
+			
+
+			<div id="accordion">
+	<div class="title">
+		<h2><a href="#"><span style="color:#FFFFFF">Timeline</span><img src="#{url_root}/img/arrow-down.png" id="timeArrow" align="right" style="padding-top:5px"/></a></h2></div>
+	<div id="tabTimeline">
+		<div class="content">
+			<div id="maptimeline" style="width: 100%; height: 100%; display: display;"><div id='tl' style="height: 100%; width: 100%; z-index: 1"></div></div>				
+		</div>
+	</div>
+	<div class="title">
+		<h2><a href="#"><span style="color:#FFFFFF">Map</span><img src="#{url_root}/img/arrow-right.png" id="mapArrow" align="right" style="padding-top:5px"/></a></h2></div>
+	<div id="tabMap">
+		<div class="content">
+			<div id="mapCanvas" style="width: 100%; height: 100%; display: display;"></div>	
+					
+		</div>
+	</div>
+	</div>	
+
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+		
+		var href = location.href;
+		var helpref = location.href;
+		
+		if(href.indexOf("&sort=date+desc")!=-1){
+			href = href.replace("&sort=date+desc","");
+		};
+		
+		if(href.indexOf("&sort=date+asc")!=-1){
+			href = href.replace("&sort=date+asc","");
+		};
+		
+		if(href.indexOf("q=")==-1){
+			href = href+"?q=";
+		};
+		
+		document.write('<div id="searchbar">');
+		document.write('<table width="100%" border="0" style="font-size:11px">');
+		document.write('<tr>');
+		document.write('<td width="10%">Sort by: </td>');
+		if(helpref.indexOf("&sort=date+desc")!=-1){
+			document.write('<td width="12%" align="center"><span id="n" onClick="sortN()" style="font-weight:900; cursor:pointer"><a href='+href+"&sort=date+desc"+'><img src="#{url_root}/img/search.png" id="searcharrowN" align="top" style="display:inline"/>Newest</a></span></td>');
+			document.write('<td width="12%" align="center"><span id="o" onClick="sortO()" style="cursor:pointer"><a href='+href+"&sort=date+asc"+'><img src="#{url_root}/img/search.png" id="searcharrowO" align="top" style="display:none"/>Oldest</a></span></td>');
+			document.write('<td width="15%" align="center"><span id="r" onClick="sortR()" style="cursor:pointer"><a href='+href+'><img src="#{url_root}/img/search.png" id="searcharrowR" align="top" style="display:none"/>Relevance</a></span></td>');
+		}else if(helpref.indexOf("&sort=date+asc")!=-1){
+			document.write('<td width="12%" align="center"><span id="n" onClick="sortN()" style="cursor:pointer"><a href='+href+"&sort=date+desc"+'><img src="#{url_root}/img/search.png" id="searcharrowN" align="top" style="display:none"/>Newest</a></span></td>');
+			document.write('<td width="12%" align="center"><span id="o" onClick="sortO()" style="font-weight:900; cursor:pointer"><a href='+href+"&sort=date+asc"+'><img src="#{url_root}/img/search.png" id="searcharrowO" align="top" style="display:inline"/>Oldest</a></span></td>');
+			document.write('<td width="15%" align="center"><span id="r" onClick="sortR()" style="cursor:pointer"><a href='+href+'><img src="#{url_root}/img/search.png" id="searcharrowR" align="top" style="display:none"/>Relevance</a></span></td>');
+		}else{
+			document.write('<td width="12%" align="center"><span id="n" onClick="sortN()" style="cursor:pointer"><a href='+href+"&sort=date+desc"+'><img src="#{url_root}/img/search.png" id="searcharrowN" align="top" style="display:none"/>Newest</a></span></td>');
+			document.write('<td width="12%" align="center"><span id="o" onClick="sortO()" style="cursor:pointer"><a href='+href+"&sort=date+asc"+'><img src="#{url_root}/img/search.png" id="searcharrowO" align="top" style="display:none"/>Oldest</a></span></td>');
+			document.write('<td width="15%" align="center"><span id="r" onClick="sortR()" style="font-weight:900; cursor:pointer"><a href='+href+'><img src="#{url_root}/img/search.png" id="searcharrowR" align="top" style="display:inline"/>Relevance</a></span></td>');
+		}
+		document.write('<td width="auto" align="right"><span id="suchraum" onClick="showOptions()" style="font-weight:900; cursor:pointer">Limit search space<span></td>');
+		document.write('</tr>');
+		document.write('</table>');
+		document.write('</div>');
+				
+		</script>
+		
+		<div id="searchbarTime" style="font-size:11px; display:none">
+		<div id="options"><input type="hidden" name="fq" id="fq" value=""/>
+		<div class="search-duration">Search From
+				<select name="from_month" id="from_month" size="1">
+					<option value="1" selected>Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+					<option value="4">Apr</option>
+					<option value="5">May</option>
+					<option value="6">Jun</option>
+					<option value="7">Jul</option>
+					<option value="8">Aug</option>
+					<option value="9">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12">Dec</option>
+				  </select>
+				  <select name="from_day" id="from_day" size="1">
+					<option value="1" selected>1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				  </select>
+				  <select name="from_year" size="1" disabled="disabled"><option value="1987" selected>1987</option></select>
+				  through
+				  <select name="to_month" id="to_month" size="1">
+					<option value="1">Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+					<option value="4">Apr</option>
+					<option value="5">May</option>
+					<option value="6">Jun</option>
+					<option value="7">Jul</option>
+					<option value="8">Aug</option>
+					<option value="9">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12" selected>Dec</option>
+				  </select>
+				  <select name="to_day" id="to_day" size="1">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31" selected>31</option>
+				  </select>
+				  <select name="to_year" size="1" disabled="disabled">
+				  <option value="1987" selected>1987</option>
+				  </select>	</div></div>
+		
+		</div>
+		
+		
+
+
+
+	##Suchfilter () ***************************************************************************************************
+    #if($request.params.get('debugQuery'))
+      <input type="text" name="debugQuery" value="true"/>
+    #end
+    #if($annotate == true)
+      <input type="text" name="annotateBrowse" value="true"/>
+    #end
+    #foreach($fq in $request.params.getParams('fq'))
+      #if ($fq != "{!bbox}" && $fq.indexOf("date")==-1)
+        ##<input type="text" name="fq" id="allFQs" value="$esc.html($fq)"/>
+	   #end
+	   #if ($fq.indexOf("date")!=-1)	   
+	   
+	   	#set($value = $fq)
+		#set($fm = $fq.substring(11, 13))
+		#set($fd = $fq.substring(14, 16))
+		#set($tm = $fq.substring(35, 37))
+		#set($td = $fq.substring(38, 40))
+		
+	    <script> 	
+		document.getElementById('from_month').value = $fm;
+		document.getElementById('to_month').value = $tm;
+		document.getElementById('from_day').value = $fd;
+		document.getElementById('to_day').value = $td;
+    	</script>
+	  
+	  #end
+    #end
+	
+	##Suchfilter ***************************************************************************************************
+    <div class="constraints" #annTitle("Lists out the &fq filters.  Click to remove.")>
+      #foreach($fq in $params.getParams('fq'))
+        #set($previous_fq_count=$velocityCount - 1)
+        #if($fq != '' && $fq !="date:[1987-01-01T00:00:00Z TO 1987-12-31T00:00:00Z]")
+		
+		## Benutzte Suchfilter ***************************************************************************************************
+        ##<a style="{text-decoration: line-through;}" href="#url_for_filters($request.params.getParams('fq').subList(0,$previous_fq_count))">$fq</a>
+        
+		#end
+      #end
+    </div>
+    <div class="parsed_query_header">
+     #if($request.params.get('debugQuery'))
+        <a href="#" onclick='jQuery(this).siblings("div").toggle(); return false;'>toggle parsed query</a>
+        <div class="parsed_query" style="display:none">$response.response.debug.parsedquery</div>
+      #end
+      #set($queryOpts = $request.params.get("queryOpts"))
+      #if($queryOpts && $queryOpts != "")
+        ##<input type="text" name="queryOpts" value="$queryOpts"/>
+      #end
+    </div>
+	
+	</div>
+	</form>
+
+</div>

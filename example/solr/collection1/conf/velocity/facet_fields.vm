@@ -1,0 +1,74 @@
+#if($response.facetFields)
+
+    #foreach($field in $response.facetFields)
+      ## Hide facets without value
+	  
+	  
+	 
+	  <div class="module">
+		  <div class="moduleHeader">	
+				#if($field.name=="cat")
+					<h4><span class="facet-field">CATEGORY</span></h4>
+				#end
+				
+				#if($field.name=="author_s")
+					<h4><span class="facet-field">AUTHOR</span></h4>
+				#end
+				
+				#if($field.name=="origin_s")
+					<h4><span class="facet-field">ORIGIN</span></h4>
+				#end
+		  </div>
+	  
+	  	  
+      			#if($field.name!="cat")
+				<div class="moduleBody" align="justify">
+			  <ul>        
+				#foreach($facet in $field.values)          
+					#if($facet.name.length()>0)			
+					<script type="text/javascript">	
+						var helpCat = '$facet.name';
+						var anotherHref = location.href;
+						
+						if(helpCat.indexOf(" ")!=-1){
+							helpCat = helpCat.replace(" ","+");
+						}	
+						
+						if(anotherHref.indexOf('%22'+helpCat+'%22')!=-1){
+							document.write('<div onClick="removeCat(\'$field.name\',\'$facet.name\')" style="cursor:pointer"><li><b><a>$facet.name</a></b>($facet.count)</li></div>');					  		
+						}else{
+							document.write('<div style="padding-left:0px"><li><a href="#url_for_facet_filter($field.name, $facet.name)">$facet.name</a> ($facet.count)</li></div>');
+						}
+					</script>
+					#end					
+				#end
+			  </ul>
+	  			#else
+				<div class="moduleBody" align="justify">
+				<div style="padding:10Px">
+				#foreach($facet in $field.values)          
+					#if($facet.name.length()>0)			
+					<script type="text/javascript">
+						var helpCat = '$facet.name';
+						var anotherHref = location.href;
+						
+						if(helpCat.indexOf(" ")!=-1){
+							helpCat = helpCat.replace(" ","+");
+						}							
+						var x = Math.log(('$facet.count'+1)/15)+1;
+						if(anotherHref.indexOf('cat:%22'+helpCat+"%22")!=-1){
+														
+							document.write('<div onClick="removeCat(\'$field.name\',\'$facet.name\')" style="cursor:pointer; display:inline;"><b><font color="#ffa200" size='+x+'>$facet.name</font></b> </div>');					  		
+						}else{						
+							document.write('<div style="padding-left:0px; display:inline"><a href="#url_for_facet_filter($field.name, $facet.name)"><font size='+x+'>$facet.name</font> </a></div>');
+						}
+					</script>
+					#end					
+				#end
+				</div>
+				#end
+	  	   </div>
+	  </div>
+      
+    #end
+  #end

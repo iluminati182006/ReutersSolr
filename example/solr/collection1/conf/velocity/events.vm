@@ -1,0 +1,421 @@
+
+
+<script>
+
+    SimileAjax.History.enabled = false;
+	
+
+    // Events that will be loaded via loadJSON method
+	
+	if(days2.length==1){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0],
+								'description': contents[0]                             
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==2){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0],
+								'description': contents[0]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1]  ,
+								'description': contents[1]                            
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==3){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0] , 
+								'description': contents[0]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1] ,
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2] ,
+								'description': contents[2]                             
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==4){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0] ,
+								'description': contents[0]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1], 
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2] ,
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3] , 
+								'description': contents[3]                            
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==5){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0] ,
+								'description': contents[0]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1],
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2] ,
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3], 
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4],
+								'description': contents[4]                              
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==6){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0],
+								'description': contents[0]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1],  
+								'description': contents[1]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2] ,
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3], 
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4], 
+								'description': contents[4]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[5], days2[5]),
+								'title': titles[5],
+								'description': contents[5]                             
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==7){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0]  ,
+								'description': contents[0]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1], 
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2], 
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3] ,
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4] ,  
+								'description': contents[4]                          
+								}
+								,
+								{
+								'start': new Date(1987, months2[5], days2[5]),
+								'title': titles[5] ,
+								'description': contents[5]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[6], days2[6]),
+								'title': titles[6],
+								'description': contents[6]                              
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==8){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0]  ,
+								'description': contents[0]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1], 
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2], 
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3] ,
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4] ,  
+								'description': contents[4]                          
+								}
+								,
+								{
+								'start': new Date(1987, months2[5], days2[5]),
+								'title': titles[5] ,
+								'description': contents[5]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[6], days2[6]),
+								'title': titles[6],
+								'description': contents[6]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[7], days2[7]),
+								'title': titles[7],
+								'description': contents[7]                              
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==9){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0]  ,
+								'description': contents[0]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1], 
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2], 
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3] ,
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4] ,  
+								'description': contents[4]                          
+								}
+								,
+								{
+								'start': new Date(1987, months2[5], days2[5]),
+								'title': titles[5] ,
+								'description': contents[5]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[6], days2[6]),
+								'title': titles[6],
+								'description': contents[6]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[7], days2[7]),
+								'title': titles[7],
+								'description': contents[7]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[8], days2[8]),
+								'title': titles[8],
+								'description': contents[8]                              
+								}
+												   
+			  ]
+		}
+	}
+	
+	if(days2.length==10){	
+		var timeline_data = {
+				'events' : [
+	
+								{
+								'start': new Date(1987, months2[0], days2[0]),
+								'title': titles[0]  ,
+								'description': contents[0]                            
+								}
+								,
+								{
+								'start': new Date(1987, months2[1], days2[1]),
+								'title': titles[1], 
+								'description': contents[1]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[2], days2[2]),
+								'title': titles[2], 
+								'description': contents[2]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[3], days2[3]),
+								'title': titles[3] ,
+								'description': contents[3]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[4], days2[4]),
+								'title': titles[4] ,  
+								'description': contents[4]                          
+								}
+								,
+								{
+								'start': new Date(1987, months2[5], days2[5]),
+								'title': titles[5] ,
+								'description': contents[5]                             
+								}
+								,
+								{
+								'start': new Date(1987, months2[6], days2[6]),
+								'title': titles[6],
+								'description': contents[6]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[7], days2[7]),
+								'title': titles[7],
+								'description': contents[7]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[8], days2[8]),
+								'title': titles[8],
+								'description': contents[8]                              
+								}
+								,
+								{
+								'start': new Date(1987, months2[9], days2[9]),
+								'title': titles[9],
+								'description': contents[9]                              
+								}
+												   
+			  ]
+		}
+	}
+
+
+</script>

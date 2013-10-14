@@ -1,0 +1,10 @@
+#set($dym = $response.response.spellcheck.suggestions.collation.collationQuery)
+#if($dym)
+ 	<br>
+	  <br/>
+	<div id="pagination3" style="padding-left:288px; align:right">
+		Did you mean <a href="#{url_for_home}#{lensNoQ}&q=$esc.url($dym)">$esc.html($dym)</a>?
+      <br>
+	  <br/>
+	</div>
+#end
